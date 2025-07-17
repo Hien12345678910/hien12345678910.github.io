@@ -1,0 +1,7 @@
+@media (min-width: 768px) and (max-width: 1023px) {
+  .container {
+    display: grid;
+    grid-template-rows: 2fr;
+    grid-template-columns: 1fr;
+  }
+}

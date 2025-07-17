@@ -1,0 +1,426 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+  position: relative;
+  text-align: center;
+}
+.Name {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+  top: 80px;
+}
+.Job {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 15px;
+  color: black;
+  top: 120px;
+}
+.name {
+  font-size: 25px;
+  color: #000;
+  position: relative;
+}
+.FTU {
+  color: hsl(197, 46%, 36%);
+  font-size: 10px;
+}
+.personal-info {
+  display: grid;
+  grid-template-columns: 50% 50%; /* chia 2 cột bằng nhau */
+  gap: 40px;
+  padding: 40px;
+  background-color: #f5f5f5;
+}
+
+.personal-info {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.personal-info h2 {
+  margin-bottom: 15px;
+  color: #333;
+}
+.career-goal p {
+  color: #000;
+}
+.career-goal {
+  border: 1px solid #888;
+}
+.personal-details {
+  color: #000;
+}
+.personal-details p {
+  text-align: start;
+  right: 20px;
+}
+.personal-details h2 {
+  text-align: start;
+}
+
+nav {
+  text-align: start;
+  padding-right: 10px;
+}
+.goal {
+  text-align: start;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  margin: 0;
+  height: 100%;
+  justify-content: center;
+  grid-column: 20px;
+}
+
+.card {
+  background: white;
+  border: 1px solid #ccc;
+  padding: 20px;
+}
+
+.card h3 {
+  margin-top: 0;
+  font-size: 18px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+}
+
+.highlight {
+  color: #007bff;
+  font-weight: bold;
+}
+
+.skills p {
+  display: block;
+  margin: 6px 0;
+  border-style: 5px solid #007bff;
+  padding-bottom: 10px;
+}
+
+.bar {
+  display: inline-block;
+  height: 6px;
+  background: #007bff;
+  border-radius: 4px;
+  margin-left: 8px;
+}
+
+.card {
+  text-align: start;
+}
+
+.hobbies {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.hobby {
+  text-align: center;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  border: 2px solid #00bcd4;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  color: #00bcd4;
+  margin-bottom: 6px;
+}
+
+.hobby p {
+  margin: 0;
+  font-size: 14px;
+}
+.skills p {
+  border-bottom: 5px solid #007bff;
+}
+.level {
+  display: flex;
+  gap: 6px;
+  margin-top: 4px;
+}
+
+.level span {
+  width: 45px;
+  height: 2px;
+  border: 1px solid #ccc; /* viền mặc định */
+  border-radius: 4px;
+}
+
+.level .filled {
+  background: #199cdb;
+  display: inline-block;
+  height: 2px;
+  margin-right: 10px;
+  width: 45px;
+  /* tô đầy bên trong */
+}
+
+.level .empty {
+  border: 1px solid #ccc; /* viền xám */
+  background-color: transparent; /* không tô bên trong */
+}
+h3 span {
+  text-align: end;
+}
+.certificates {
+  padding: 20px;
+}
+
+.grid-price {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 cột */
+  grid-auto-rows: auto;
+  gap: 20px;
+  width: 1100px;
+  justify-self: center;
+}
+
+.certificate {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 10px;
+}
+
+.certificate img {
+  width: 120px;
+  height: auto;
+  object-fit: contain;
+}
+
+.cert-info {
+  font-size: 14px;
+  color: #333;
+}
+.cert-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  align-items: start;
+}
+
+.projects {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 20px;
+  width: 1100px;
+  grid-auto-rows: auto;
+  justify-self: center;
+}
+
+.project-card {
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 8px;
+  background: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.project-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+  border-bottom: 2px #333;
+}
+
+th {
+  font-size: 16px;
+  text-align: left;
+  color: #333;
+  padding-bottom: 8px;
+}
+
+td {
+  padding: 4px 0;
+  vertical-align: top;
+}
+
+.badge {
+  display: inline-block;
+  padding: 2px 6px;
+  background-color: #007bff;
+  color: white;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+.social-links {
+  background-color: #f7f7f7;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.social-links ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 0;
+  margin: 0;
+}
+
+.social-links li a {
+  text-decoration: none;
+  color: #888;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.social-links i {
+  background-color: #43b0f1;
+  color: white;
+  border-radius: 50%;
+  padding: 10px;
+  font-size: 14px;
+  width: 34px;
+  height: 34px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1000px;
+}
+
+.navbar-list li {
+  flex: 1;
+  text-align: center;
+}
+
+.navbar-center {
+  flex: 2; /* lớn hơn để làm điểm nhấn ở giữa */
+}
+
+.navbar-list li a {
+  text-decoration: none;
+  color: #007acc;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.navbar-list li a i {
+  margin-right: 5px;
+}
+
+.navbar-center {
+  flex: 1;
+  text-align: center;
+}
+
+.navbar-center .name {
+  font-weight: bold;
+  font-size: 18px;
+  color: #000;
+}
+
+.navbar-center .position {
+  font-size: 13px;
+  color: #888;
+}
+
+.avatar-container {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 6px solid #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: -60px auto 20px auto;
+  position: relative;
+  z-index: 10;
+  background: #fff;
+}
+
+.avatar {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hide {
+  display: none;
+}
+input {
+  width: 80%;
+  padding: 8px;
+  margin-top: 5px;
+}
+
+button {
+  margin-top: 10px;
+  padding: 6px 12px;
+}
+
+.error {
+  color: red;
+  font-size: 0.9em;
+  margin-top: 5px;
+}
+
+.extra-info {
+  display: none;
+  margin-top: 15px;
+  font-size: 14px;
+  color: #444;
+}
+.toggle-btn {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fef9c3;
+  border: none;
+  font-size: 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+.card:hover .toggle-btn {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.card:hover {
+  border: 2px solid #333;
+}

@@ -1,0 +1,83 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 20px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 20px;
+  max-width: 1200px;
+  margin: auto;
+  background-color: white;
+  padding: 20px;
+  border: 30px solid blue;
+  box-shadow: 0 0 10px #0004;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: inset 0 0 5px #ccc;
+  border: 5px solid blue;
+}
+
+.card h2 {
+  color: #0019ff;
+  margin-bottom: 15px;
+}
+
+.card ul {
+  list-style: none;
+}
+
+.card ul li {
+  margin-bottom: 10px;
+}
+
+.card ul li span {
+  margin-right: 10px;
+}
+
+.timeline ul li {
+  position: relative;
+  padding-left: 50px;
+  margin-bottom: 15px;
+}
+
+.timeline .circle {
+  position: absolute;
+  left: 0;
+  top: 5px;
+  width: 30px;
+  height: 30px;
+  background: #d0b8ff;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 30px;
+  font-weight: bold;
+  color: #333;
+}
+
+.scopes .columns {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.scopes .columns h3 {
+  color: #0019ff;
+  margin-bottom: 10px;
+}
+
+.primary ul li {
+  margin-bottom: 10px;
+}

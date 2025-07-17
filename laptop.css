@@ -1,0 +1,42 @@
+@media screen and (min-width: 992px) {
+  .career-goal {
+    text-align: center;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    gap: 20px;
+  }
+  .navbar-center {
+    display: block;
+  }
+  .level .filled {
+    background: #199cdb;
+    display: inline-block;
+    height: 5px;
+    margin-right: 10px;
+    width: 45px;
+    /* tô đầy bên trong */
+  }
+  .grid-price {
+    display: grid;
+    grid-template-rows: 1fr;
+    width: 100%;
+    justify-content: center;
+  }
+  .project-grid {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+  }
+  .social-links {
+    font-size: 180%;
+    width: 100%;
+  }
+  .navbar-list {
+    display: flex;
+    justify-content: space-between;
+  }
+}
